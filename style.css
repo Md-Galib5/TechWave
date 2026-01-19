@@ -6,7 +6,7 @@
 
 body{
   width:100%;
-  background-color: rgba(65, 37, 103, 1);
+  background: linear-gradient(#412567,black);
   
 }
 
@@ -59,4 +59,93 @@ span{
     opacity: 0.9;
     font-size: 16px;
     font-weight: 500px;
+}
+.hero-parent {
+  height: 100vh;
+  background-image: url("./assets/hero-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  text-align: center;
+}
+
+.hero-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top:100px;
+    width: 100%;
+
+}
+.mic{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    z-index: 100;
+    justify-content: center;
+    left: 710px;
+    bottom: 365px;
+
+}
+.new-img{
+    position: absolute;
+    left: 130px;
+    bottom: 170px;
+}
+.banner-head{
+justify-content: center;
+align-items: center;
+gap: 8px;
+}
+.banner-h1{
+    color: white;
+    margin-top:40px;
+    font-size: 60px;
+    font-weight: 800px;
+}
+.banner-p{
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 8px;
+}
+.actions{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 24px;
+}
+.btn1{
+    width: 200px;
+    height: 44px;
+    padding: 12px 20px;
+    border-radius: 10000px;
+    background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1)));
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    gap: 5px;
+
+}
+.btn2{
+    width: 147px;
+    height: 44px;
+    padding: 12px 20px;
+    color: #00FF88;
+    background-color: transparent;
+    border-color: #00FF88;
+    border-radius: 10000px;
+    font-weight: 400;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
 }
