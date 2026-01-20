@@ -6,6 +6,7 @@
 
 body{
   width:100%;
+  font-family: "Inter", sans-serif;
   /* background: linear-gradient(#412567,black); */
   background: #1A0B2E;
 }
@@ -261,3 +262,89 @@ p{
     grid-column: span 2;
 }
 
+
+.video-container{
+    margin: 120px 200px;
+    text-align: center;
+    color: white;
+}
+
+
+.video-h{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+.video-section{
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    text-align: center;
+    justify-self: center;
+    gap: 50px
+}
+.video-section div{
+    background-color: #230E3D;
+    border-radius: 40px;
+    text-align: left;
+}
+.link-yt{
+    width: 100%;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+.video-section div p{
+    margin: 16px;
+}
+.video-h3{
+    margin: 16px;
+}
+.video-h4{
+    color: #00FF88;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 16px;
+}
+.meet{
+    justify-content: center;
+}
+.meet-container{
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+.meet-section{
+    display: flex;
+    background-color: #230E3D;
+    margin: 0 200px;
+    padding: 40px;
+}
+.meet-content{
+    text-align: left;
+    margin-left: 30px;
+    place-content: center;
+}
+.meet-h{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+}
+.meet-content h3{
+    color: white;
+    font-size: 1.25rem;
+
+}
+.meet-content p{
+    font-size: 1rem;
+    color: white;
+    opacity: .6;
+    font-weight: 400;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.icon img{
+    border: 1px solid rgba(251, 9, 180, 1);
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 50%;
+}
