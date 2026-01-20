@@ -317,6 +317,7 @@ p{
     background-color: #230E3D;
     margin: 0 200px;
     padding: 40px;
+    margin-bottom: 120px;
 }
 .meet-content{
     text-align: left;
@@ -348,3 +349,59 @@ p{
     padding: 10px;
     border-radius: 50%;
 }
+
+
+.footer{
+  height: 100%;
+  background-image: url("./assets/footer-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 412px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-content{
+  text-align: center;
+  color: white;
+}
+
+/* Logo */
+.footer-logo{
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.footer-social span{
+  color: white;
+  background: none;
+  -webkit-text-fill-color: white;
+}
+/* Social links */
+.footer-social{
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  margin-bottom: 20px;
+}
+
+.footer-social a{
+  text-decoration: none;
+  color: rgba(255,255,255,0.85);
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+
+/* Copyright */
+.footer-copy{
+  font-size: 13px;
+  color: rgba(255,255,255,0.6);
+}
+.social-item{
+    cursor: pointer;
+}
+
+
+
