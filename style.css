@@ -6,8 +6,8 @@
 
 body{
   width:100%;
-  background: linear-gradient(#412567,black);
-  
+  /* background: linear-gradient(#412567,black); */
+  background: #1A0B2E;
 }
 
 nav{
@@ -34,7 +34,7 @@ span{
     background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1)));
     color: rgba(255, 255, 255, 1);
     border: none;
-    font-size: 16px;
+    font-size: 1rem;
     font-family: "Inter", sans-serif;
     cursor: pointer;
     font-weight: 600;
@@ -57,7 +57,7 @@ span{
     text-decoration: none;
     color: white;
     opacity: 0.9;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500px;
 }
 .hero-parent {
@@ -68,6 +68,7 @@ span{
   background-repeat: no-repeat;
   position: relative;
   text-align: center;
+  border: 1px solid #2A186C;
 }
 
 .hero-img{
@@ -101,7 +102,7 @@ gap: 8px;
 .banner-h1{
     color: white;
     margin-top:40px;
-    font-size: 60px;
+    font-size: 3.75rem;
     font-weight: 800px;
 }
 .banner-p{
@@ -124,7 +125,7 @@ gap: 8px;
     background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1)));
     color: rgba(255, 255, 255, 1);
     border: none;
-    font-size: 16px;
+    font-size: 1rem;
     font-family: "Inter", sans-serif;
     cursor: pointer;
     font-weight: 600;
@@ -149,3 +150,114 @@ gap: 8px;
     justify-content: center;
     gap: 5px;
 }
+.about-section{
+    margin: 50px 200px 120px 200px;
+}
+
+.about-content{
+    text-align: center;
+    color: white;
+}
+
+.about-h{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.about-p{
+    font-weight: 200;
+    margin-bottom: 45px;
+    font-size: 1rem;
+}
+hr{
+    border: none;
+    background-color: rgba(255, 255, 255, 0.089);
+    height: 1px;
+    margin-top: 50px;
+}
+.number-section{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 80.5px auto;
+    text-align: center;
+    color: white;
+}
+
+.number-section h1{
+    font-size: 3rem;
+    font-style: bold;
+    color: #00FF88;
+    margin-bottom: 16px;
+}
+.why-container{
+    margin: 200px 120px;
+    text-align: center;
+}
+.why-h{
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 40px;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    gap: 30px;
+}
+.card{
+  background-color: rgba(53, 17, 100, 0.4);
+  color: white;
+  text-align: left;
+  padding: 40px;
+  border-radius: 40px;
+}
+.card h4{
+    font-size: 1.5rem;
+    margin: 16px 0;
+}
+.card-p{
+    font-size: 1rem;
+    font-weight: 400;
+    width: 300px;
+    height: 114px;
+    opacity: .6;
+}
+#card-1 img{
+   margin-top: 50px;
+}
+.card-p2{
+    opacity: .6;
+}
+.card-p3{
+    opacity: .6;
+}
+p{
+    opacity: .6;
+}
+.card-p5{
+    opacity: .6;
+}
+.card-p4 {
+    opacity: .6;
+}
+#card-5{
+    grid-row: span 1;
+    grid-column: span 1;
+}
+#card-4{
+    grid-row: span 1;
+    grid-column: span 2;
+}
+#card-1{
+    grid-row: span 2;
+    grid-column: span 1;
+}
+#card-2{
+    grid-row: span 1;
+    grid-column: span 2;
+}
+#card-3{
+    grid-row: span 1;
+    grid-column: span 2;
+}
+
