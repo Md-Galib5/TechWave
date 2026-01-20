@@ -26,6 +26,8 @@ body{
     display: flex;
     justify-content: space-between;
     gap: 35px;
+    color: white;
+    opacity: .6;
     list-style: none;
 }
 .head-nav .threedot{
