@@ -5,47 +5,47 @@
 }  
 
 body{
-  width:100%;
   font-family: "Inter", sans-serif;
   /* background: linear-gradient(#412567,black); */
   background: #1A0B2E;
+   overflow-x: hidden;
+    scrollbar-width: none;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
 }
 
-nav{
-    height: 92px;
-    margin: 0px 200px 0px 200px;
+.container .head-nav{
      display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 30px 0;
 }
-.header-h1{
-    color: rgba(255, 255, 255, 1);
-    font-style: bold;
+.head-nav nav ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+    list-style: none;
 }
-span{
-    background: linear-gradient(rgba(251, 9, 180, 1),rgba(145, 0, 248, 1),rgba(247, 233, 63, 1));
-    -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
+.head-nav .threedot{
+     display: none;
+    cursor: pointer;
+    height: 45px;
+    width: 45px;
+    border: none;
+    background-color: transparent;
 }
 .btn{
-    width: 135px;
-    height: 44px;
     padding: 12px 16px;
-    border-radius: 10px;
+    border: none;
+    border-radius: 10000px;
+    color: white;
+    font-weight: 600;
+
     background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1)));
     color: rgba(255, 255, 255, 1);
-    border: none;
-    font-size: 1rem;
-    font-family: "Inter", sans-serif;
-    cursor: pointer;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-}
-.btn:hover{
-     background-color: #04692d;
+    
 }
 .link-parent{
     display: flex;
@@ -61,56 +61,67 @@ span{
     font-size: 1rem;
     font-weight: 500px;
 }
-.hero-parent {
-  height: 100vh;
-  background-image: url("./assets/hero-bg.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-  text-align: center;
-  border: 1px solid #2A186C;
-}
 
-.hero-img{
-    display: flex;
+
+.hero{
+    background-image: url(./assets/hero-bg.png);
+    background-position: center;
+    background-size: cover;
+    border: 1px solid transparent;
     align-items: center;
-    justify-content: center;
-    padding-top:100px;
-    width: 100%;
-
+}
+.hero .hero-container{
+    max-width: 1200px;
+    margin: 101px auto;
+    place-items: center;
+    text-align: center;
+}
+.hero-container .mini-icon{
+    position: relative;
+    width: fit-content;
+    margin: auto;
 }
 .mic{
-    display: flex;
+    background-image: url(./assets/hero-circle.png);
+    background-position: center;
+    background-repeat: no-repeat; 
+     padding: 116px;
+}
+.badge{
+    background-color: #00FF88;
+    color: #1A0B2E;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 1000px;
+    box-shadow: 0 0 10px #00FF88;
     position: absolute;
-    align-items: center;
-    z-index: 100;
-    justify-content: center;
-    left: 710px;
-    bottom: 365px;
-
+    transform: translate(80%, 92%);
 }
-.new-img{
-    position: absolute;
-    left: 130px;
-    bottom: 170px;
-}
-.banner-head{
-justify-content: center;
-align-items: center;
-gap: 8px;
-}
-.banner-h1{
+.hero-content h1{
     color: white;
-    margin-top:40px;
     font-size: 3.75rem;
-    font-weight: 800px;
+    font-weight: bolder;
+    margin-bottom: 8px;
 }
-.banner-p{
+.hero-content p{
     color: white;
-    font-size: 16px;
-    font-weight: 400;
-    margin-top: 8px;
+    font-size: 1rem;
+    margin-bottom: 24px;
+}
+.two-btn .btn-2{
+    margin-left: 8px;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 10000px;
+    font-weight: 600;
+    color: #00FF88;
+    background-color: transparent;
+    border: 2px solid #00FF88;
+}
+.btn-2:active{
+    color: rgba(251, 9, 180, 1);
+    border: 2px solid rgba(251, 9, 180, 1);
 }
 .actions{
     align-items: center;
@@ -152,7 +163,7 @@ gap: 8px;
     gap: 5px;
 }
 .about-section{
-    margin: 50px 200px 120px 200px;
+    margin: 0 auto;
 }
 
 .about-content{
@@ -191,8 +202,9 @@ hr{
     color: #00FF88;
     margin-bottom: 16px;
 }
+
 .why-container{
-    margin: 200px 120px;
+    margin: 120px auto;
     text-align: center;
 }
 .why-h{
@@ -204,6 +216,7 @@ hr{
     display: grid;
     grid-template-columns: repeat(3, 3fr);
     gap: 30px;
+    margin: 0px 200px;
 }
 .card{
   background-color: rgba(53, 17, 100, 0.4);
@@ -264,7 +277,7 @@ p{
 
 
 .video-container{
-    margin: 120px 200px;
+    margin: 120px auto;
     text-align: center;
     color: white;
 }
@@ -280,7 +293,8 @@ p{
     grid-template-columns: repeat(3, 350px);
     text-align: center;
     justify-self: center;
-    gap: 50px
+    gap: 50px;
+    margin: 0px 200px;
 }
 .video-section div{
     background-color: #230E3D;
@@ -352,15 +366,15 @@ p{
 
 
 .footer{
-  height: 100%;
-  background-image: url("./assets/footer-bg.png");
+ 
+  background-image: url("../assets/footer-bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 412px;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 120px 200px;
 }
 .footer-content{
   text-align: center;
@@ -379,12 +393,14 @@ p{
   -webkit-text-fill-color: white;
 }
 /* Social links */
-.footer-social{
-  display: flex;
+.footer-social {
+  display: grid;
+  grid-auto-flow: column;
   justify-content: center;
-  gap: 28px;
-  margin-bottom: 20px;
+  gap: 60px;
+  margin-bottom: 30px;
 }
+
 
 .footer-social a{
   text-decoration: none;
@@ -403,5 +419,43 @@ p{
     cursor: pointer;
 }
 
-
-
+@media screen and (max-width: 576px) {
+    .head-nav .threedot{
+        display: block;
+    }
+    .hero{
+        margin: 0 auto 50px;
+    }
+    .navbar nav, .navbar{
+        display: none;
+    }
+    .number-section{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .card-container{
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        margin: 0;
+    }
+    .card{
+        padding: 20px;
+        width: 100%;
+    }
+    .video-section{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 auto;
+    }
+    .meet-section{
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .footer-social {
+    grid-auto-flow: row;
+    grid-template-columns: repeat(2, auto);
+    gap: 15px;
+    }
+    .footer{
+        padding: 20px 40px;
+    }
+}
